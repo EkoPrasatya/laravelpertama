@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Groups extends Model
 {
     use HasFactory;
+    
+    protected $guarded = ['id'];
+
+    public function friends()
+    {
+        return $this->hasMany(Friends::class);
+    }
+
 }

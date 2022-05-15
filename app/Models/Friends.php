@@ -11,4 +11,9 @@ class Friends extends Model
 
     protected $guarded = ['id'];
 
+    public function groups()
+    {
+        return $this->belongsTo(Groups::class);
+    }
+
 }
