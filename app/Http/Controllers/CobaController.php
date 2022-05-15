@@ -71,7 +71,7 @@ class CobaController extends Controller
     public function update(Request $request , $id){
 
         $request->validate([
-            'nama' => 'required|unique:friends|max:255',
+            'nama' => 'required|max:255',
             'no_tlp' => 'required|numeric',
             'alamat' => 'required'
         ]);
