@@ -42,3 +42,4 @@ Route::resources([
     'friends' => CobaController::class,
     'groups' => GroupsController::class
 ]);
+Route::get('/groups/addmember/{group}', [GroupsController::class, 'addmember']);
